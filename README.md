@@ -6,11 +6,11 @@
 * For Doug: get Generator example working
 
 ## Example of DatePeriod
-* You can use (Relative Formats)[http://php.net/manual/en/datetime.formats.relative.php]
+* You can use [Relative Formats](http://php.net/manual/en/datetime.formats.relative.php)
   with `DateInterval::createFromDateString ( string $time )`
 
 ## NOTES
-* http://localhost:9999/#/2/13: could also just say 
+* http://localhost:9999/#/2/13: could also just say
 ```
 public function getDimensions() {
         yield from $this->widths;
