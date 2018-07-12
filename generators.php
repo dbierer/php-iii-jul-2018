@@ -36,26 +36,26 @@ class GenericParse
     }
 }
 
+$run   = 'good';
 $parse = new GenericParse('war_and_peace.txt');
 
-echo "\nUsing Generator";
-echo "\n------------------------------\n";
 $start  = time();
-foreach ($parse->getTextGood() as $word) {
-    echo $word . ' ';
+if ($run == 'good') {
+	echo "\nUsing Generator";
+	echo "\n------------------------------\n";
+	foreach ($parse->getTextGood() as $word) {
+		echo $word . ' ';
+	}
+} else {
+	echo "\nConventional Approach";
+	echo "\n------------------------------\n";
+	$start  = time();
+	foreach ($parse->getTextBad() as $word) {
+		echo $word . ' ';
+	}
 }
 $end = time();
 printf(GenericParse::TIME_DIFF, ($end - $start));
 
-/*
-echo "\nConventional Approach";
-echo "\n------------------------------\n";
-$start  = time();
-foreach ($parse->getTextBad() as $word) {
-    echo $word . ' ';
-}
-$end = time();
-printf(GenericParse::TIME_DIFF, ($end - $start));
-*/
 
 
