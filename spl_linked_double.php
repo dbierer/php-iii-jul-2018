@@ -28,7 +28,9 @@ $linked = buildLinkedList($customer, $makeLink);
 
 // doubly linked list
 $double = buildDoublyLinkedList($linked);
-$double->setIteratorMode(SplDoublyLinkedList::IT_MODE_LIFO);
+// IT_MODE_FIFO  == Ascending Order
+// IT_MODE_LIFO  == Descending Order
+$double->setIteratorMode(SplDoublyLinkedList::IT_MODE_FIFO);
 
 // produce output based on linked list
 echo printCustomer($headers, $double, $customer);

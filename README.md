@@ -1,5 +1,7 @@
 # PHP-III CLASS NOTES -- Jul 2018
 
+Left off with: http://localhost:9999/#/3/27
+
 ## HOMEWORK FOR MONDAY:
 * Define an app that uses software events (or PubSub)
     * Define an EventManager class as a singleton

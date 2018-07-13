@@ -32,12 +32,13 @@ function buildLinkedList(array $primary,
     $filterVal = trim($filterVal);
     foreach ($primary as $key => $row) {
         // only include in the linked list if level == INT
+        $newKey = $makeLink($row);
         if ($filterCol) {
             if (trim($row[$filterCol]) == $filterVal) {
-                $linked->offsetSet($makeLink($row), $key);
+                $linked->offsetSet($newKey, $key);
             }
         } else {
-            $linked->offsetSet($makeLink($row), $key);
+            $linked->offsetSet($newKey, $key);
         }
     }
     $linked->ksort();
