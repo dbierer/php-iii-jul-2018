@@ -1,8 +1,23 @@
 # PHP-III CLASS NOTES -- Jul 2018
 
-## HOMEWORK:
-* Setup Apache JMeter
-* Setup Jenkins
+## HOMEWORK FOR MONDAY:
+* Define an app that uses software events (or PubSub)
+    * Define an EventManager class as a singleton
+        * Define `attach()` which takes and event and a callable as arguments
+            * The callable needs to accept an array of parameters
+        * Define `trigger()` which runs the callable and passes an array of parameters
+    * Define two other classes which get an instance of the EventManager
+        * Have each of the other classes trigger one or more of the events
+    * Create a calling program
+        * Provides configuration to the EventManager and creates an instance
+        * Creates instances of the other 2 classes and passes in the EventManager
+        * Runs methods from the other 2 classes
+* Use Iterators to do the following:
+    * Do a recursive directory scan of the /php3/* directory structure
+    * Use FilterIterator to include only *.php files
+    * Use LimitIterator to paginate 20 items per page
+    * Use InfiniteIterator to loop back to the beginning when you hit the last page
+
 
 ## Example of DatePeriod
 * You can use [Relative Formats](http://php.net/manual/en/datetime.formats.relative.php)
