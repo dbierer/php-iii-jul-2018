@@ -37,6 +37,7 @@ public function getDimensions() {
         yield from $this->lengths;
     }
 ```
-
 * PHP 7 Examples: https://github.com/dbierer/php7_examples
+* Heap: https://en.wikipedia.org/wiki/Heap_%28data_structure%29
+  * NOTE: a _priority queue_ is an implementation of a heap
 
