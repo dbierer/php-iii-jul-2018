@@ -29,9 +29,8 @@ Left off with: http://localhost:9999/#/3/27
 * RE: http://localhost:9999/#/2/31: if offset === NULL, what array key is it???
 * RE: http://localhost:9999/#/2/37: example doesn't work in /php3 folder
 * RE: Generator class: pull up an example showing a Generator instance
+  * See: `generator.php` in this repo
 * RE: Null Coalesce: https://github.com/dbierer/php7_examples/blob/master/php_7_0/null_coalesce_operator.php
-
-## NOTES
 * http://localhost:9999/#/2/13: could also just say
 ```
 public function getDimensions() {
@@ -39,7 +38,27 @@ public function getDimensions() {
         yield from $this->lengths;
     }
 ```
+
+
+## NOTES
+
+### PHP 7
 * PHP 7 Examples: https://github.com/dbierer/php7_examples
+
+### Data Structures
 * Heap: https://en.wikipedia.org/wiki/Heap_%28data_structure%29
   * NOTE: a _priority queue_ is an implementation of a heap
+* Note other examples which are now in the repo
 
+### PHP CLI
+* Capture command line parameters using either `$argv[]` or `$_SERVER['argv'][]`
+
+### Cache
+* [PSR-16](https://www.php-fig.org/psr/psr-16/) is a simplified version of cache based on PSR-6
+* Have a look at http://php.net/manual/en/book.apc.php
+
+### Custom PHP
+* The download URL varies depending on the code name for the release.  The example shown in the slides is "krakjoe" which is 7.1.  The upcoming version 7.3 has a codename "cmb".
+* Just click on the link shown on the main page of http://php.net/
+* Here is another example of a PHP custom installation `configure` command string: https://github.com/dbierer/php7_examples#manual-php-7-installation
+* You can also use `php -i` (from the command line) or `phpinfo()` (from a browser) to get the `configure` string used for an existing installation
