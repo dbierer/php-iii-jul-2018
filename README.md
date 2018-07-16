@@ -2,7 +2,11 @@
 
 Left off with: http://localhost:9999/#/3/27
 
-## HOMEWORK FOR MONDAY:
+## HOMEWORK
+### FOR WEDS 18 Jul 2018
+* Built-in Web Server Lab
+
+### FOR MON 16 Jul 2018
 * Define an app that uses software events (or PubSub)
     * Define an EventManager class as a singleton
         * Define `attach()` which takes and event and a callable as arguments
@@ -27,9 +31,11 @@ Left off with: http://localhost:9999/#/3/27
 
 ## Q & A
 * RE: http://localhost:9999/#/2/31: if offset === NULL, what array key is it???
+  * A: stays at the same pointer
+  * Please confirm!
 * RE: http://localhost:9999/#/2/37: example doesn't work in /php3 folder
 * RE: Generator class: pull up an example showing a Generator instance
-  * See: `generator.php` in this repo
+  * A: See: `generator.php` in this repo
 * RE: Null Coalesce: https://github.com/dbierer/php7_examples/blob/master/php_7_0/null_coalesce_operator.php
 * http://localhost:9999/#/2/13: could also just say
 ```
@@ -38,7 +44,8 @@ public function getDimensions() {
         yield from $this->lengths;
     }
 ```
-
+* RE: stdin: please find example of mini-server
+* RE: stream filters: please find example of encryption filter
 
 ## NOTES
 
