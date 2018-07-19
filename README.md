@@ -1,8 +1,22 @@
 # PHP-III CLASS NOTES -- Jul 2018
 
-Left off with: http://localhost:9999/#/3/27
+NOTE TO SELF: copy instructions on PHP driver install into the repo
+NOTE TO SELF: find customer server example using STDIN
 
 ## HOMEWORK
+### FOR MON 23 Jul 2018
+* OPTIONAL Extension Lab: 
+  * Install MongoDB on the VM
+  * Install the PHP driver
+  * 
+
+### FOR FRI 20 Jul 2018
+* Extension Custom Development Lab
+* Custom PHP Lab
+* CD Phing Build Tool Lab
+* Continuous Delivery Lab
+
+
 ### FOR WEDS 18 Jul 2018
 * Built-in Web Server Lab
 
@@ -69,3 +83,6 @@ public function getDimensions() {
 * Just click on the link shown on the main page of http://php.net/
 * Here is another example of a PHP custom installation `configure` command string: https://github.com/dbierer/php7_examples#manual-php-7-installation
 * You can also use `php -i` (from the command line) or `phpinfo()` (from a browser) to get the `configure` string used for an existing installation
+
+### RE: Thread Safe (TS) vs. Non-Thread Save (NTS) on Windows
+* https://stackoverflow.com/questions/7204758/php-thread-safe-and-non-thread-safe-for-windows
