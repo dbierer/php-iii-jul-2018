@@ -8,7 +8,21 @@ NOTE TO SELF: find customer server example using STDIN
 * OPTIONAL Extension Lab: 
   * Install MongoDB on the VM
   * Install the PHP driver
-  * 
+* Apache JMeter Lab
+  * It's *not* locked to the launcher
+  * Click on extreme top left search icon
+  * Start typing `jmeter`
+  * Click on the feather
+* All the Docker Labs in Chapter 6
+  * To add an entry to the local hosts file
+  * Find the IP address for the docker image by typing `ifconfig`
+  * Add that to the `/etc/hosts` file on the VM:
+```
+sudo gedit /etc/hosts
+```
+  * Add ip address and host name of your choice
+  * To confirm: `ping -c3 host.name`
+
 
 ### FOR FRI 20 Jul 2018
 * Extension Custom Development Lab
@@ -86,3 +100,7 @@ public function getDimensions() {
 
 ### RE: Thread Safe (TS) vs. Non-Thread Save (NTS) on Windows
 * https://stackoverflow.com/questions/7204758/php-thread-safe-and-non-thread-safe-for-windows
+
+### Docker
+* No longer have to install `boot2docker` when installing on Windows or Mac
+* Look here: https://docs.docker.com/machine/install-machine/
