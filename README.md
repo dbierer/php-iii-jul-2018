@@ -5,10 +5,10 @@ NOTE TO SELF: find customer server example using STDIN
 
 ## HOMEWORK
 ### FOR MON 23 Jul 2018
-* OPTIONAL Extension Lab: 
+* OPTIONAL Extension Lab:
   * Install MongoDB on the VM
   * Install the PHP driver
-  * 
+  * Do all the Docker labs
 
 ### FOR FRI 20 Jul 2018
 * Extension Custom Development Lab
@@ -86,3 +86,6 @@ public function getDimensions() {
 
 ### RE: Thread Safe (TS) vs. Non-Thread Save (NTS) on Windows
 * https://stackoverflow.com/questions/7204758/php-thread-safe-and-non-thread-safe-for-windows
+
+### Docker
+* Try `LinuxForPhp`: https://linuxforphp.net/tutorial
