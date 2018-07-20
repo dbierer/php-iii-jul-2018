@@ -5,7 +5,7 @@ NOTE TO SELF: find customer server example using STDIN
 
 ## HOMEWORK
 ### FOR MON 23 Jul 2018
-* OPTIONAL Extension Lab: 
+* OPTIONAL Extension Lab:
   * Install MongoDB on the VM
   * Install the PHP driver
 * Apache JMeter Lab
@@ -22,7 +22,7 @@ sudo gedit /etc/hosts
 ```
   * Add ip address and host name of your choice
   * To confirm: `ping -c3 host.name`
-
+  * Do all the Docker labs
 
 ### FOR FRI 20 Jul 2018
 * Extension Custom Development Lab
@@ -104,3 +104,4 @@ public function getDimensions() {
 ### Docker
 * No longer have to install `boot2docker` when installing on Windows or Mac
 * Look here: https://docs.docker.com/machine/install-machine/
+* Try `LinuxForPhp`: https://linuxforphp.net/tutorial
