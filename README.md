@@ -4,6 +4,10 @@ NOTE TO SELF: copy instructions on PHP driver install into the repo
 NOTE TO SELF: find customer server example using STDIN
 
 ## HOMEWORK
+
+### FOR WED 25 Jul 2018
+* Apigility Lab
+
 ### FOR MON 23 Jul 2018
 * OPTIONAL Extension Lab:
   * Install MongoDB on the VM
@@ -105,3 +109,12 @@ public function getDimensions() {
 * No longer have to install `boot2docker` when installing on Windows or Mac
 * Look here: https://docs.docker.com/machine/install-machine/
 * Try `LinuxForPhp`: https://linuxforphp.net/tutorial
+
+### Apigility
+* Start Up: `http://apigility/` from the browser in the VM
+* http://localhost:9999/#/7/32: post actual graphic of .htaccess (hard to see)
+* http://localhost:9999/#/7/50: missing one thing to copy: the `php3/src/ModWebApi/PropulsionSystems` directory over into 
+  the `apigility/module/FlyingElephantService/Rest`
+  * Look at the next slide to see what the final dir structure should look like
+* http://localhost:9999/#/7/50: missing one file: `php3/src/ModWebApi/Flying Elephant Apigility.postman_collection.json`
+
