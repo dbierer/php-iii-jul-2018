@@ -113,8 +113,17 @@ public function getDimensions() {
 ### Apigility
 * Start Up: `http://apigility/` from the browser in the VM
 * http://localhost:9999/#/7/32: post actual graphic of .htaccess (hard to see)
-* http://localhost:9999/#/7/50: missing one thing to copy: the `php3/src/ModWebApi/PropulsionSystems` directory over into 
+* http://localhost:9999/#/7/50: missing one thing to copy: the `php3/src/ModWebApi/PropulsionSystems` directory over into
   the `apigility/module/FlyingElephantService/Rest`
   * Look at the next slide to see what the final dir structure should look like
 * http://localhost:9999/#/7/50: missing one file: `php3/src/ModWebApi/Flying Elephant Apigility.postman_collection.json`
+  * Posted 2 versions of the files in the repo
 
+### MiddleWare
+* Authentication: use MiddleWare!!!
+* See: https://framework.zend.com/blog/2017-04-26-authentication-middleware.html
+* Or use something already created:
+  * https://github.com/tuupola/slim-jwt-auth
+* MiddleWare class example: https://github.com/dbierer/zf3-examples/blob/master/guestbook/admin/src/Manage/src/Service/Guestbook.php
+* Zend\Expressive MiddleWare project: https://github.com/dbierer/zf3-examples/tree/master/guestbook/admin
+* Pre-built PSR-7 compliant classes: https://github.com/zendframework/zend-diactoros
