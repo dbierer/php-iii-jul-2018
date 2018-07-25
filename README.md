@@ -1,9 +1,14 @@
 # PHP-III CLASS NOTES -- Jul 2018
 
-NOTE TO SELF: copy instructions on PHP driver install into the repo
-NOTE TO SELF: find customer server example using STDIN
+NOTE TO SELF: after importing *.json file into postman, how do you run those requests?
+NOTE TO SELF: upload to the repo example using Stragility v2
 
 ## HOMEWORK
+
+### FOR FRI 27 Jul 2018
+* Middleware Lab
+  * DO NOT create a new zend-expressive-skeleton app!!!
+  * Use the existing code under the `/expressive` folder
 
 ### FOR WED 25 Jul 2018
 * Apigility Lab
@@ -81,6 +86,12 @@ public function getDimensions() {
 
 ## NOTES
 
+### Stream
+* Q: What are "buckets" in PHP Streams?
+* A: See: https://stackoverflow.com/questions/27103269/what-is-a-bucket-brigade#31132646
+* Q: What is PSFS_FEED_ME (etc.)
+* A: See: http://php.net/manual/en/stream.constants.php
+
 ### PHP 7
 * PHP 7 Examples: https://github.com/dbierer/php7_examples
 
@@ -121,9 +132,19 @@ public function getDimensions() {
 
 ### MiddleWare
 * Authentication: use MiddleWare!!!
-* See: https://framework.zend.com/blog/2017-04-26-authentication-middleware.html
-* Or use something already created:
-  * https://github.com/tuupola/slim-jwt-auth
+	* See: https://framework.zend.com/blog/2017-04-26-authentication-middleware.html
+	* Or use something already created:
+		* https://github.com/tuupola/slim-jwt-auth
+		* https://packagist.org/packages/zendframework/zend-expressive-authentication
 * MiddleWare class example: https://github.com/dbierer/zf3-examples/blob/master/guestbook/admin/src/Manage/src/Service/Guestbook.php
 * Zend\Expressive MiddleWare project: https://github.com/dbierer/zf3-examples/tree/master/guestbook/admin
 * Pre-built PSR-7 compliant classes: https://github.com/zendframework/zend-diactoros
+* Upload chap_09_middleware_request_using_with.php to class repo
+* PSRs can be installed using Composer:
+  * i.e. https://packagist.org/packages/psr/http-message
+  * or https://github.com/php-fig/http-message
+* Actual implementations of PSR-7 compliant classes that are ready-to-use
+  * https://packagist.org/packages/guzzlehttp/psr7
+  * https://packagist.org/packages/zendframework/zend-diactoros
+* Focus on Stragility v2 ... don't bother with v1!
+  * https://docs.zendframework.com/zend-stratigility/v2/middleware/
