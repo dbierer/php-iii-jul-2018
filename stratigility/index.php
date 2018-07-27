@@ -7,7 +7,9 @@
  */
 
 define('LOG_FILE', __DIR__ . '/access.log');
-define('MENU', '<a href="/">Home Page</a><br><a href="/main">Main Page</a><br><a href="/main">Foo Page</a><br><a href="/view">View Log</a>');
+define('MENU', '<a href="/">Home Page</a><br><a href="/main">Main Page</a><br><a href="/foo">Foo Page</a><br><a href="/view">View Log</a>');
+
+require __DIR__ . '/vendor/autoload.php';
 
 // main classes needed
 use Zend\Diactoros\Response;
@@ -21,8 +23,6 @@ use Zend\Stratigility\MiddlewarePipe;
 
 use function Zend\Stratigility\middleware;
 use function Zend\Stratigility\path;
-
-require __DIR__ . '/vendor/autoload.php';
 
 $app = new MiddlewarePipe();
 $server = Server::createServer([$app, 'handle'], $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
@@ -38,7 +38,7 @@ $log = function ($req, $handler) {
     return $handler->handle($req);
 };
 
-// middleware: landing page
+// middleware: main page
 $main = function ($req, $handler) {
     $response = new Response();
     $response->getBody()->write('<h1>Main Page</h1>' . MENU);
@@ -52,7 +52,7 @@ $foo = function ($req, $handler) {
     return $response;
 };
 
-// middleware: foo page
+// middleware: access page
 $view = function ($req, $handler) {
     $response = new Response();
     $contents = file_get_contents(LOG_FILE);

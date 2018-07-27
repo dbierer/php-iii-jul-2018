@@ -83,6 +83,9 @@ public function getDimensions() {
 ```
 * RE: stdin: please find example of mini-server
 * RE: stream filters: please find example of encryption filter
+* RE: http://localhost:9999/#/9/15:s/be "*"
+* RE: http://localhost:9999/#/9/22: Title doesn't match the class shown in code
+* RE: http://localhost:9999/#/9/64: "dommain" s/be "domain"
 
 ## NOTES
 
