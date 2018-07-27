@@ -132,10 +132,10 @@ public function getDimensions() {
 
 ### MiddleWare
 * Authentication: use MiddleWare!!!
-	* See: https://framework.zend.com/blog/2017-04-26-authentication-middleware.html
-	* Or use something already created:
-		* https://github.com/tuupola/slim-jwt-auth
-		* https://packagist.org/packages/zendframework/zend-expressive-authentication
+    * See: https://framework.zend.com/blog/2017-04-26-authentication-middleware.html
+    * Or use something already created:
+        * https://github.com/tuupola/slim-jwt-auth
+        * https://packagist.org/packages/zendframework/zend-expressive-authentication
 * MiddleWare class example: https://github.com/dbierer/zf3-examples/blob/master/guestbook/admin/src/Manage/src/Service/Guestbook.php
 * Zend\Expressive MiddleWare project: https://github.com/dbierer/zf3-examples/tree/master/guestbook/admin
 * Pre-built PSR-7 compliant classes: https://github.com/zendframework/zend-diactoros
@@ -146,5 +146,36 @@ public function getDimensions() {
 * Actual implementations of PSR-7 compliant classes that are ready-to-use
   * https://packagist.org/packages/guzzlehttp/psr7
   * https://packagist.org/packages/zendframework/zend-diactoros
-* Focus on Stragility v2 ... don't bother with v1!
-  * https://docs.zendframework.com/zend-stratigility/v2/middleware/
+* RE: Stragility ... there are actually 3 versions:
+  * https://docs.zendframework.com/zend-stratigility/v1/install/
+    * Uses these Composer packages:
+      * `psr/http-message`
+      * `http-interop/http-middleware`
+  * https://docs.zendframework.com/zend-stratigility/v2/install/
+    * Uses these Composer packages:
+      * `psr/http-message`
+      * `http-interop/http-middleware`
+  * https://docs.zendframework.com/zend-stratigility/v3/install/
+    * Uses these Composer packages:
+      * `psr/http-message`
+      * `psr/http-server-middleware`
+
+### Architecture
+* Strategy Pattern: https://en.wikipedia.org/wiki/Strategy_pattern
+  * Also called the "Policy" pattern (think Microsoft and "Group" policy)
+
+* Examples of Strategies:
+  * https://github.com/zendframework/zend-view/tree/master/src/Strategy
+  * https://github.com/zendframework/zend-mvc/blob/master/src/View/Http/RouteNotFoundStrategy.php
+  * Example: see `expressive-demo` in the repo:
+```
+cd /path/to/this/repo/expressive-demo
+php -S localhost:9999 -t public
+```
+  * From your browser: `http://localhost:9999/`
+  * Click on the `Strategy Test` link
+    * Output should be HTML
+  * Open up `postman` or use the FireFox REST Client
+    * Add this header: `Accept: application/json`
+    * Issue a GET request
+    * Output should be JSON
